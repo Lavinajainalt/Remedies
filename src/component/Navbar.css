@@ -1,0 +1,162 @@
+.navbar {
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+
+.nav-left .brand img {
+  height: 40px;
+  width: auto;
+}
+
+.nav-elements ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.nav-elements li {
+  margin-left: 30px;
+}
+
+.nav-elements a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-elements a:hover {
+  color: #007bff;
+}
+
+.user-profile {
+  position: relative;
+  cursor: pointer;
+}
+
+.user-circle {
+  width: 40px;
+  height: 40px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.user-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 8px 0;
+  min-width: 150px;
+  display: none;
+}
+
+.user-profile:hover .user-dropdown {
+  display: block;
+}
+
+.user-dropdown a,
+.user-dropdown button {
+  display: block;
+  width: 100%;
+  padding: 8px 16px;
+  text-align: left;
+  border: none;
+  background: none;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+}
+
+.user-dropdown button:hover,
+.user-dropdown a:hover {
+  background-color: #f5f5f5;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+/* Hamburger Menu Styles */
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  height: 3px;
+  background-color: #333;
+  border-radius: 3px;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-elements {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background-color: white;
+    width: 100%;
+    padding: 20px;
+    display: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-elements.active {
+    display: block;
+  }
+
+  .nav-elements ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-elements li {
+    margin: 10px 0;
+    width: 100%;
+  }
+
+  .user-dropdown {
+    position: static;
+    box-shadow: none;
+    display: none;
+    padding-left: 20px;
+  }
+
+  .user-profile:hover .user-dropdown {
+    display: block;
+  }
+}

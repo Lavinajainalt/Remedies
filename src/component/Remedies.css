@@ -1,0 +1,61 @@
+.remedies-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .search-section {
+    margin: 20px 0;
+    text-align: center;
+  }
+  
+  .search-input {
+    padding: 10px;
+    width: 300px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .search-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .search-button:hover {
+    background-color: #45a049;
+  }
+  
+  .results-section {
+    margin-top: 30px;
+  }
+  
+  .remedy-card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .remedy-card h2 {
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .remedy-card ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .remedy-card li {
+    margin-bottom: 8px;
+    color: #666;
+  }
+  
