@@ -12,6 +12,7 @@ import Signup from './component/Signup';
 import Bmi from './component/Bmi';
 import Meditation from './component/Meditation';
 import HomeRemedies from './component/HomeRemedies';
+import Doctor from './component/Doctor';
 
 
 
@@ -33,6 +34,7 @@ function App() {
           <Route path='/Meditation' element={<Meditation />} />
           <Route path='/HomeRemedies' element={<HomeRemedies />} />
           <Route path='/service' element={<Service />} />
+          <Route path='/Doctor' element={<Doctor />} />
           
           
         </Routes>
